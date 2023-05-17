@@ -35,6 +35,16 @@
 
     @yield('js')
 
+    <script>
+        $(document).ready(function(){
+            $(document).on('click','#login_form_fill_up', function(e){
+                e.preventDefault();
+                $('#login_email').val('rabbi@gmail.com');
+                $('#login_password').val('12345678');
+            })
+        })
+    </script>
+
 </body>
 
 </html>

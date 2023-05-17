@@ -17,7 +17,7 @@
     <div class="form-group">
 
         <div class="input-group">
-            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
+            <input id="login_email" type="email" name="email" class="form-control @error('email') is-invalid @enderror"
                 placeholder="Email" value="{{ old('email') }}" required autocomplete="email">
             <div class="input-group-append">
                 <div class="input-group-text">
@@ -34,7 +34,7 @@
     <div class="form-group">
 
         <div class="input-group">
-            <input type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password"
+            <input id="login_password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password"
                 name="password" required autocomplete="current-password">
             <div class="input-group-append">
                 <div class="input-group-text">
@@ -58,8 +58,9 @@
             </div>
         </div>
         <!-- /.col -->
-        <div class="col-4">
+        <div class="col-12">
             <button type="submit" class="btn btn-success btn-block">Log In</button>
+            <button id="login_form_fill_up" class="btn btn-info btn-block">Form Fill up</button>
         </div>
         <!-- /.col -->
     </div>
